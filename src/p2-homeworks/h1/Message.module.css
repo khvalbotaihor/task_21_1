@@ -1,3 +1,26 @@
 .message {
+    display: grid;
+    grid-template-areas:
+            "mess pD";
+    width: 350px;
+    height: 200px;
+}
+.image{
+    background-color: red;
+}
 
+.image img{
+    width: 100px;
+    height: 100px;
+}
+div div.postDetails{
+    grid-area: pD;
+    background-color: greenyellow;
+}
+div div.message{
+    grid-area: mess;
+}
+.postText{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
