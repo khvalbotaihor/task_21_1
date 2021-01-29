@@ -15,12 +15,7 @@ function HW1(props:any) {
                 sender={props.sender}
             />
 
-{/*
-            <hr/>
-*/}
-{/*
-            для личного творчества, могу проверить
-*/}
+
             <AlternativeMessage/>
         </div>
     );

@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./Message.module.css"
+import {MessageData} from "../../p1-main/m1-ui/u1-app/App";
 
-function Message(props:any) {
+function Message(props:MessageData) {
     return (<div>
         <div className={props.sender ? s.message : s.messageResponder}>
             <div className={ s.image}>
