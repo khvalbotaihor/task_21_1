@@ -1,26 +1,60 @@
 .message {
     display: grid;
-    grid-template-areas:
-            "mess pD";
-    width: 350px;
-    height: 200px;
-}
-.image{
-    background-color: red;
+    grid-template-areas: "mess pD";
+    width: 400px;
+    margin: 10px;
 }
 
-.image img{
+.image {
     width: 100px;
     height: 100px;
 }
-div div.postDetails{
-    grid-area: pD;
-    background-color: greenyellow;
+
+.image img {
+    border-radius: 50%;
+
+    width: 100px;
+    height: 100px;
 }
-div div.message{
+
+div div.postDetails {
+    padding: 5px;
+    border-radius: 5px 5px 5px 0px;
+
+    grid-area: pD;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+div div.postDetails:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-bottom-color: black;
+    bottom: 0px;
+    left: -10px;
+}
+
+div div.message {
     grid-area: mess;
 }
-.postText{
+
+.postText {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text text data"
+}
+
+.text {
+    grid-area: text;
+}
+
+.date {
+    grid-area: data;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: bold;
 }
