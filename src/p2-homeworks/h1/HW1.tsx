@@ -2,21 +2,17 @@ import React from "react";
 import AlternativeMessage from "./AlternativeMessage";
 import Message from "./Message";
 
-const messageData = {
-    avatar: "https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg",
-    name: "Artem",
-    message: "npm start нажимал?",
-    time: "20:00",
-};
 
-function HW1() {
+
+function HW1(props:any) {
     return (
         <div>
             <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
+                avatar={props.avatar}
+                name={props.name}
+                message={props.message}
+                time={props.time}
+                sender={props.sender}
             />
 
 {/*

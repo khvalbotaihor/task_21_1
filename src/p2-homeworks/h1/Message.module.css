@@ -4,15 +4,23 @@
     width: 400px;
     margin: 10px;
 }
+.messageResponder {
+    display: grid;
+    grid-template-areas: "pD mess";
+    width: 400px;
+    margin: 10px;
+    margin-left: 215px;
+}
 
 .image {
     width: 100px;
     height: 100px;
+    margin-left: 20px;
+
 }
 
 .image img {
     border-radius: 50%;
-
     width: 100px;
     height: 100px;
 }
@@ -20,7 +28,14 @@
 div div.postDetails {
     padding: 5px;
     border-radius: 5px 5px 5px 0px;
-
+    grid-area: pD;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+div div.postDetailsRight {
+    padding: 5px;
+    border-radius: 5px 5px 5px 0px;
     grid-area: pD;
     background-color: black;
     color: white;
@@ -34,6 +49,15 @@ div div.postDetails:before {
     border-bottom-color: black;
     bottom: 0px;
     left: -10px;
+}
+
+div div.postDetailsRight:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-bottom-color: black;
+    bottom: 0px;
+    right: -10px;
 }
 
 div div.message {
